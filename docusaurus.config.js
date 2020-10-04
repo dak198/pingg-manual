@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Pingg',
+  title: 'pingg',
   tagline: 'Where better matches are made.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -9,23 +9,55 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'pingg',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'pingg logo',
         src: 'img/logo.svg',
       },
+
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Manual',
-          position: 'left',
-        },
-        {
-          href: 'https://github.com/zpg6/pingg',
-          label: 'GitHub',
-          position: 'right',
-        },
+	  {
+	    label: 'Product Overview',
+	    to: 'docs/product-overview/',
+	    position: 'left',
+	  },
+	  {
+	    label: 'Manual',
+	    position: 'left',
+	    items: [
+	      {
+	        label: 'Getting Started',
+	        to: 'docs/getting-started/',
+	        position: 'left',
+	      },
+	      {
+	        label: 'Modes of Operation',
+	        to: 'docs/modes-of-operation/',
+	        position: 'left',
+	      },
+	    ],
+	  },
+	  {
+	    label: 'Requirements Spec',
+	    position: 'left',
+	    items: [
+	      {
+	        label: 'Information Description',
+	        to: 'docs/rspec/information-description/',
+	        position: 'left',
+	      },
+	      {
+	        label: 'Functional Description',
+	        to: 'docs/rspec/functional-description/',
+	        position: 'left',
+	      },
+	    ],
+	  },
+          {
+            href: 'https://github.com/zpg6/pingg',
+            label: 'GitHub',
+            position: 'right',
+          },
       ],
     },
     footer: {
